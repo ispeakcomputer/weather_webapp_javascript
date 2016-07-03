@@ -1,0 +1,23 @@
+body{
+  background: #7FB76D; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #79f47b, #6DB780); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #79f47b, #6DB780); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #79f47b, #6DB780); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #9de25b , #99d460); /* Standard syntax */
+}
+.demo-card-wide.mdl-card {
+  width: 512px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+  top: 150px;
+}
+
+#demo{
+  font-size: 60px;
+}
+#temp{
+  font-size: 40px;
+}
+
+
