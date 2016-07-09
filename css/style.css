@@ -19,5 +19,8 @@ body{
 #temp{
   font-size: 40px;
 }
-
-
+#weathericon{
+  font-size: 200px;
+}
+#cardcontents{
+}

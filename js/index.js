@@ -1,27 +1,39 @@
 $( document ).ready(function() {
-    // Here is the geolocation stufsf
-    $.getJSON("http://ip-api.com/json",function(locate){
-      console.log(locate.city);
-      console.log(locate);
+    var ipurl = "http://ip-api.com/json";
+    // Here is the geolocation stuff lat / log for next api request. No need to request user location
+    $.getJSON( ipurl,function(locate){
       document.getElementById("demo").innerHTML = "<b>" + locate.city + "</b>";
 
-         //weather api stuff here.
-         var latitude = locate.lat;
-          console.log(latitude);
-         var longitude = locate.lon;
-          console.log(longitude);
-
-        var url = 'http://api.openweathermap.org/data/2.5/weather?&lat=' + latitude + '&lon=' + longitude + '&units=imperial&APPID=a5b84f49b6412d3c42bb6f8a8a3cbef8';
+        //get weather from openweathermap using info from the ip-api.com api.
+        var url = 'http://api.openweathermap.org/data/2.5/weather?&lat=' + locate.lat + '&lon=' + locate.lon + '&units=imperial&APPID=a5b84f49b6412d3c42bb6f8a8a3cbef8';
 
          $.getJSON( url, function (data){
 
-          console.log(data.weather[0].id)
-          var hr = (new Date()).getHours();
-          console.log(hr);
+            console.log(new Date(data.sys.sunset));
+            console.log(data.sys.sunset);
+            console.log(new Date(data.sys.sunrise));
 
+            var code = data.weather[0].id;
+            var hr = (new Date()).getHours();
+            console.log(data);
+            //Check sunset to see if it is dark and use the night icon / day icon.
+            var darkOutside = function nightOrDay(condition){
+            if (hr > 18){
+              //this option for night and the next for day
+              return condition + "-n";
+            }
+            else{
+            return condition + "-d";
+            }
+            }
+
+            //This is where we start writing are information to the page
+
+           //add the condition to class to choose the correct icon. variable/function at end to check for night and day
+           document.getElementById("weathericon").className = "owf owf-" + darkOutside(code) ;
            //adds weather to doc
            document.getElementById("weather").innerHTML = data.weather[0].main;
-           //adds temp. still needs to be converted.add conversion.
+           //adds temp
            document.getElementById("temp").innerHTML = data.main.temp + "&#176;";
             });
 
