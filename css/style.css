@@ -1,26 +1,58 @@
 body{
-  background: #7FB76D; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left, #79f47b, #6DB780); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, #79f47b, #6DB780); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, #79f47b, #6DB780); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, #9de25b , #99d460); /* Standard syntax */
+  /*background: #7FB76D; /* For browsers that do not support gradients */
+  /*background: -webkit-linear-gradient(left, #B9E78C, #A2E78C); /* For Safari 5.1 to 6.0 */
+  /*background: -o-linear-gradient(right, #B9E78C, #A2E78C); /* For Opera 11.1 to 12.0 */
+  /*background: -moz-linear-gradient(right, #B9E78C, #A2E78C); /* For Firefox 3.6 to 15 */
+  /*background: linear-gradient(to right, #B9E78C , #A2E78C); /* Standard syntax */
+  /*background-color: white;*/
+  /*background-image: url("backg.jpg");*/
+  /*background-repeat: no-repeat;*/
 }
 .demo-card-wide.mdl-card {
   width: 512px;
   margin-left: auto;
   margin-right: auto;
-  padding: 40px;
   top: 150px;
-}
-
-#demo{
-  font-size: 60px;
-}
-#temp{
-  font-size: 40px;
+  color: white;
 }
 #weathericon{
   font-size: 200px;
+  margin-top: 100px;
+  color: #D18CE7;
+}
+#weather{
+  color: #D18CE7;
+  font-size: 100px;
+  font-weight: lighter;
+}
+#temp{
+  font-size: 60px;
+  color: #D18CE7;
+
+}
+#demo{
+  font-size: 60px;
+  color: #D18CE7;
 }
 #cardcontents{
+}
+#titleblock{
+  position: absolute;
+  width: 512px;
+  height: 100px;
+  background-color: #D18CE7;
+  text-align: center;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  }
+#toptitle{
+  position: relative;
+  font-size: 50px;
+  top: 30px;
+  font-weight: lighter;
+}
+#subtitle{
+  position: relative;
+  top: 35px;
+  font-size: 25px;
 }
