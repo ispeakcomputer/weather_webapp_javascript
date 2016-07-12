@@ -15,6 +15,9 @@ $( document ).ready(function() {
             //get the hr for night and day icon matching
             var hr = (new Date()).getHours();
 
+                  console.log(data);
+                  console.log(code);
+
             //Check sunset to see if it is dark and use the night icon / day icon.
             var darkOutside = function nightOrDay(condition){
             if (hr > 18){
@@ -30,9 +33,6 @@ $( document ).ready(function() {
             return condition + "-d";
             }
           };
-        });
-      });
-
 
             //This is where we start writing are information to the page
 
@@ -42,4 +42,7 @@ $( document ).ready(function() {
            document.getElementById("weather").innerHTML = data.weather[0].main;
            //adds temp
            document.getElementById("temp").innerHTML = data.main.temp + "&#176;";
+
          });
+     });
+   });
