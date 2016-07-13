@@ -18,7 +18,7 @@ body{
   margin-right: auto;
   top: 150px;
   color: white;
-  opacity: 0.90;
+  opacity: 0.9;
   filter: alpha(opacity=90);
 }
 #titleblock{
@@ -27,8 +27,7 @@ body{
   height: 100px;
   background-color: #626260;
   text-align: center;
-  opacity: 0.3;
-  filter: alpha(opacity=70);
+  
   }
 #toptitle{
   position: relative;
