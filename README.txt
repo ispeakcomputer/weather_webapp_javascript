@@ -5,6 +5,6 @@ daytime icon set from 6am to 7pm depending on what is returned from Javascript D
 
 See the live version here: 
 
-www.anotherryan.com/weatherbuddy/
+http://www.anotherryan.com/weatherbuddy/
 
  
