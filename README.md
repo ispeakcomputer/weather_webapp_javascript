@@ -10,7 +10,7 @@ the time of day.
 
 #Motivation
 
-This app was built in order has a quick way to always know the weather.
+This app was built in order has a quick way to always know the weather. It was built in a way that it could be used with a smart mirror project.
 
 #Modules
 
