@@ -25,7 +25,6 @@ body{
   position: relative;
   font-size: 50px;
   top: 30px;
-  /*font-weight: lighter;*/
 }
 #subtitle{
   position: relative;
@@ -51,12 +50,11 @@ body{
   color: #626260;
 }
 
-@media (max-width: 760px){
+@media (max-width: 700px){
   #toptitle{
     position: relative;
     font-size: 45px;
     top: 30px;
-    /*font-weight: lighter;*/
   }
 #titleblock{
     position: absolute;
@@ -99,7 +97,6 @@ body{
     position: relative;
     font-size: 35px;
     top: 5px;
-    /*font-weight: lighter;*/
   }
   #subtitle{
     position: relative;
