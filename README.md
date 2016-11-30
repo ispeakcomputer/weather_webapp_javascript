@@ -1,6 +1,6 @@
 #WeatherBuddy 
 
-See a Demo Here: http://www.anotherryan.com/weatherbuddy/
+See a Demo Here: http://www.ispeakcomputer.com/weatherbuddy/
 
 A webapp built to display the current weather in your area.
 This webapp was built in a way that the browser doesn't need your permission to send location information. It instead uses IP-API to get 
