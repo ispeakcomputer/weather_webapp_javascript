@@ -1,4 +1,4 @@
-#WeatherBuddy 
+# WeatherBuddy 
 
 See a Demo Here: http://www.ispeakcomputer.com/weatherbuddy/
 
@@ -8,11 +8,11 @@ your latitude and longitude settings for the current public IP you are using. It
 .After this is done the data is paired with a OwFont Weather Icon from the Owfont kit. Simple code to tell the app to use Night/Day icons depending on 
 the time of day. 
 
-#Motivation
+# Motivation
 
 This app was built in order has a quick way to always know the weather. It was built in a way that it could be used with a smart mirror project.
 
-#Modules
+# Modules
 
  Material Design Lite
  Jquery 
