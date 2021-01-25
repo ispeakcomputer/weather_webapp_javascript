@@ -18,3 +18,8 @@ This app was built in order has a quick way to always know the weather. It was b
  Jquery 
  OWFont
  
+ ## Package.json added to allow Heroku 'static site'
+ 
+ The package.json tricks Heroku into thinking this is a Node.js app and 
+ depencies are added to serve static files 
+ 
