@@ -15,18 +15,23 @@ It takes this information and feeds it into the OpenWeatherMap API
 After this is done the data is paired with a OwFont Weather Icon for either  Night/Day icons depending on 
 the time of day. 
 
-# Motivation
+## Motivation
 
 This app was built so that it could be used with a smart mirror project.
 
-# Modules
+## Modules
 
  Material Design Lite
  Jquery 
  OWFont
  
- ## Package.json added to allow Heroku 'static site'
- 
- The package.json tricks Heroku into thinking this is a Node.js app and 
- depencies are added to serve static files 
- 
+
+## Installation
+
+Serve with Heroku like any other HTML / Javascript app. The package.json file has been added to this repo 
+added to allow to run on Heroku as 'static site'. The package.json tricks Heroku into thinking this is a 
+Node.js app and depencies are added to serve static files 
+
+If running on your webserver just put all files in the public folder.
+
+to run locally download the repo move into the repo directory and click to open with a browser the index.html file
