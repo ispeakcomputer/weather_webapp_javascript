@@ -2,8 +2,6 @@
 
 <a href="https://github.com/ispeakcomputer/weather_webapp_javascript/blob/master/images/image.png" title="app image"><img src="https://github.com/ispeakcomputer/weather_webapp_javascript/blob/master/images/image.png" width="600"></a>
 
-See a Demo Here: http://ispeakcomputer.com/weatherapp/
-
 A webapp built to display the current weather in your area.
 
 This webapp was built in a way that the browser doesn't need your permission to send location information. 
